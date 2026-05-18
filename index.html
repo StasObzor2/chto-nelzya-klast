@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Что нельзя класть в посылку при отправке по России и за границу</title>
+    <meta name="description" content="Полный список запрещённых предметов для отправки посылкой по России и за рубеж. Опасные вещества, оружие, валюта, лекарства, продукты. Правила таможни и ответственность.">
+    <style>
+    /* ===== БАЗОВЫЕ СТИЛИ ===== */
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: #f8fafc;
+        color: #1e293b;
+        line-height: 1.6;
+        padding: 40px 20px;
+        margin: 0;
+    }
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 50px;
+        border-radius: 24px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.02);
+    }
+    
+    /* Hero-секция */
+    .hero-section {
+        background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+        border-radius: 24px;
+        padding: 60px 40px;
+        margin-bottom: 40px;
+        text-align: center;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        color: white;
+    }
+    .hero-section h1 {
+        color: #ffffff !important;
+        font-size: 2.8rem;
+        margin: 0;
+        border: none !important;
+    }
+    .hero-subtitle {
+        color: #94a3b8;
+        font-size: 1.1rem;
+        margin-top: 15px;
+    }
+    
+    /* Вводный экспертный блок */
+    .intro-expert-block {
+        background-color: #f8fafc;
+        border-left: 4px solid #3b82f6;
+        padding: 35px;
+        margin: 40px 0;
+        border-radius: 0 20px 20px 0;
+        position: relative;
+    }
+    .intro-expert-block::before {
+        content: "📦";
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        background: white;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .intro-expert-block p {
+        font-size: 1.15rem;
+        color: #334155;
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+    .intro-expert-block p:last-child {
+        margin-bottom: 0;
+        font-weight: 600;
+        color: #1e293b;
+    }
+    
+    /* Разделители категорий */
+    .category-divider {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 60px 0 30px;
+        padding: 15px 25px;
+        background: #f1f5f9;
+        border-radius: 12px;
+        border-left: 5px solid #3b82f6;
+    }
+    .category-divider h2 {
+        margin: 0;
+        font-size: 1.6rem;
+        color: #1e293b;
+        border: none !important;
+    }
+    
+    /* Карточки контента */
+    .content-card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 18px;
+        padding: 30px;
+        margin-bottom: 25px;
+        transition: all 0.3s ease;
+    }
+    .content-card:hover {
+        border-color: #3b82f6;
+        box-shadow: 0 10px 25px rgba(59, 130, 246, 0.08);
+    }
+    .content-card h2 {
+        color: #1e293b;
+        font-size: 1.4rem;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    .content-card p {
+        color: #475569;
+        font-size: 1.05rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+    .content-card p:last-child {
+        margin-bottom: 0;
+    }
+    .content-card a {
+        color: #3b82f6;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    
+    /* Блок с критериями (карточки с иконками) */
+    .criteria-card {
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 30px;
+        margin-bottom: 25px;
+        border: 1px solid #e2e8f0;
+        display: flex;
+        gap: 25px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    .criteria-card:hover {
+        transform: scale(1.01);
+        box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+    }
+    .criteria-card::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 6px;
+    }
+    .card-blue::before { background: #3b82f6; }
+    .card-red::before { background: #ef4444; }
+    .card-green::before { background: #10b981; }
+    .card-orange::before { background: #f59e0b; }
+    .card-purple::before { background: #8b5cf6; }
+    
+    .card-icon {
+        font-size: 2.5rem;
+        min-width: 60px;
+        height: 60px;
+        background: #f1f5f9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+    }
+    .card-content h2 {
+        margin: 0 0 12px 0;
+        font-size: 1.4rem;
+        color: #0f172a;
+    }
+    .card-content p {
+        margin: 0 0 15px 0;
+        color: #475569;
+        font-size: 1.05rem;
+    }
+    .card-content p:last-child { margin-bottom: 0; }
+    
+    /* Адаптив */
+    @media (max-width: 768px) {
+        body { padding: 16px 12px; }
+        .container { padding: 20px 16px; border-radius: 20px; }
+        .hero-section { padding: 32px 20px; margin-bottom: 28px; }
+        .hero-section h1 { font-size: 1.9rem; line-height: 1.3; }
+        .hero-subtitle { font-size: 1rem; }
+        .intro-expert-block { padding: 24px 18px; margin: 28px 0; }
+        .intro-expert-block p { font-size: 1rem; }
+        .content-card { padding: 20px 18px; margin-bottom: 20px; }
+        .content-card h2 { font-size: 1.3rem; }
+        .category-divider { margin: 40px 0 20px; padding: 12px 18px; }
+        .category-divider h2 { font-size: 1.3rem; }
+        .criteria-card { flex-direction: column; gap: 12px; padding: 22px 18px; }
+        .card-icon { min-width: 48px; width: 48px; height: 48px; font-size: 1.8rem; }
+        .card-content h2 { font-size: 1.25rem; }
+        .card-content p { font-size: 0.95rem; }
+        .site-footer { padding: 32px 20px 24px; margin-top: 40px; font-size: 0.85rem; }
+        .footer-content { flex-direction: column; gap: 20px; text-align: center; }
+        .footer-copyright { text-align: center; }
+    }
+    
+    /* Подвал */
+    .site-footer {
+        background: #f1f5f9;
+        border-radius: 20px;
+        margin-top: 60px;
+        padding: 40px 40px 30px;
+        border-top: 1px solid #e2e8f0;
+    }
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .footer-logo {
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #0f172a;
+        letter-spacing: -0.2px;
+    }
+    .footer-links {
+        display: flex;
+        gap: 28px;
+        flex-wrap: wrap;
+    }
+    .footer-links a {
+        color: #3b82f6;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: opacity 0.2s;
+    }
+    .footer-links a:hover {
+        text-decoration: underline;
+        opacity: 0.8;
+    }
+    .footer-copyright {
+        font-size: 0.8rem;
+        color: #5b6e8c;
+        text-align: left;
+        border-top: 1px solid #e2e8f0;
+        padding-top: 20px;
+        margin-top: 8px;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- Hero-секция -->
+    <div class="hero-section">
+        <h1>Что нельзя класть в посылку<br>при отправке по России и за границу</h1>
+        <p class="hero-subtitle">Взрывчатка, оружие, скоропортящиеся продукты, культурные ценности — полный список запретов</p>
+    </div>
+
+    <!-- Изображение -->
+    <div style="text-align: center; margin-bottom: 30px;">
+    <!-- Вводный блок -->
+    <div class="intro-expert-block">
+        <p>Перечень предметов, что нельзя класть в посылку, включает взрывчатые вещества, оружие, скоропортящиеся продукты и культурные ценности без разрешения. Курьерские службы и почтовые операторы руководствуются соображениями безопасности персонала и сохранности других грузов. Нарушение правил приводит к конфискации вложения, штрафам или отказу в транспортировке на этапе сортировки.</p>
+        <p>Службы доставки используют автоматизированные системы сканирования для проверки содержимого. Если система обнаружит запрещенные вложения, посылку задержат до выяснения обстоятельств. Это сорвет сроки доставки и создаст дополнительные сложности для отправителя и получателя.</p>
+    </div>
+
+    <!-- Раздел: Почему важно знать правила -->
+    <div class="category-divider">
+        <span>⚠️</span>
+        <h2>Почему важно знать правила упаковки содержимого</h2>
+    </div>
+
+    <div class="content-card">
+        <h2>Сканирование, законы и безопасность</h2>
+        <p>Ограничения делятся на общие и специфические для конкретных стран. Внутри России действуют правила, установленные федеральным законодательством и внутренними регламентами перевозчиков. При международных отправлениях к ним добавляются требования таможенного союза и законы страны назначения. Большинство запретов связано с физическими свойствами материалов. Горючие жидкости, баллоны под давлением или аккумуляторы могут спровоцировать пожар в грузовом отсеке самолета или автомобиля. Соблюдение регламента гарантирует, что ваше отправление благополучно пройдет все этапы логистической цепи.</p>
+    </div>
+
+    <!-- Раздел: Основные категории запрещённых предметов -->
+    <div class="category-divider">
+        <span>🚫</span>
+        <h2>Основные категории предметов, которые нельзя пересылать по почте</h2>
+    </div>
+
+    <div class="content-card">
+        <h2>Опасные вещества и материалы</h2>
+        <p>Существует базовый список вещей, которые не примет ни одна логистическая компания. Предметы из этого перечня представляют прямую угрозу безопасности или нарушают государственную монополию. К группе опасных веществ относятся любые субстанции, способные к самовозгоранию или взрыву. Сюда включают: порох, патроны и любые виды пиротехники; сжатые и сжиженные газы в баллонах; легковоспламеняющиеся жидкости, включая спирт, бензин и растворители; едкие и коррозионные вещества, например, кислоты или ртуть.</p>
+        <p>Даже бытовые предметы, такие как лак для ногтей или дезодорант-спрей, часто попадают под ограничения. Авиаперевозчики крайне строго относятся к аэрозолям из-за риска разгерметизации при перепадах давления.</p>
+    </div>
+
+    <!-- Раздел: Оружие и средства самообороны -->
+    <div class="category-divider">
+        <span>🔫</span>
+        <h2>Оружие и средства самообороны</h2>
+    </div>
+
+    <div class="content-card">
+        <h2>От огнестрела до электрошокеров</h2>
+        <p>Запрет распространяется не только на огнестрельное оружие, но и на любые конструктивно схожие изделия. В посылку нельзя помещать электрошокеры, газовые баллончики и ножи, которые относятся к категории холодного оружия. Курьерские службы требуют сертификаты на складные или кухонные ножи, чтобы подтвердить их хозяйственно-бытовое назначение.</p>
+    </div>
+
+    <!-- Раздел: Валюта и ценные бумаги -->
+    <div class="category-divider">
+        <span>💰</span>
+        <h2>Валюта и ценные бумаги</h2>
+    </div>
+
+    <div class="content-card">
+        <h2>Деньги, чеки, облигации</h2>
+        <p>Российское законодательство четко определяет, что нельзя пересылать по почте денежные знаки РФ и иностранную валюту. Это правило касается также облигаций, чеков и других долговых обязательств. Для перевода средств существуют банковские инструменты и специализированные почтовые переводы.</p>
+    </div>
+
+    <!-- Раздел: Что запрещено за границу -->
+    <div class="category-divider">
+        <span>🌍</span>
+        <h2>Что запрещено отправлять почтой за границу</h2>
+    </div>
+
+    <div class="content-card">
+        <h2>Культурные ценности, растения, биоматериалы</h2>
+        <p>Международные отправления проходят через таможенный контроль. Список того, что запрещено отправлять почтой через границу, значительно шире внутренних ограничений. Без специального разрешения Министерства культуры запрещено вывозить предметы, имеющие историческую ценность. К ним могут отнести старинные книги, монеты, картины или иконы. Даже если вещь принадлежит вашей семье десятилетиями, на границе ее могут изъять для экспертизы.</p>
+        <p>Семена, саженцы и образцы почвы запрещены к пересылке из-за фитосанитарных норм. Государства защищают свою флору от иностранных вредителей и болезней. Биологические материалы, включая кровь или другие анализы, требуют перевозки в специальных контейнерах с оформлением медицинских разрешений.</p>
+    </div>
+
+    <!-- Раздел: Литиевые аккумуляторы -->
+    <div class="category-divider">
+        <span>🔋</span>
+        <h2>Литиевые аккумуляторы и электроника</h2>
+    </div>
+
+    <div class="content-card">
+        <h2>Правила IATA для батарей</h2>
+        <p>Пересылка литиевых батарей регулируется правилами IATA (Международная ассоциация воздушного транспорта). Батареи, встроенные в технику, обычно разрешены к перевозке. Однако отдельно лежащие аккумуляторы или мощные внешние накопители (Power Bank) часто не допускаются к авиадоставке. Перед отправкой гаджета стоит изучить актуальный список ограничений для посылок, чтобы не столкнуться с возвратом товара.</p>
+    </div>
+
+    <!-- Раздел: Медикаменты и продукты -->
+    <div class="category-divider">
+        <span>💊</span>
+        <h2>Трудности с пересылкой медикаментов и продуктов</h2>
+    </div>
+
+    <div class="content-card">
+        <h2>Рецепты, упаковка и ограничения</h2>
+        <p>Отправка лекарств физическими лицами часто становится причиной задержки груза. Многие препараты содержат сильнодействующие или психотропные вещества. Без рецепта и подтвержденных медицинских показаний такие вложения признаются незаконными. Продукты питания также имеют свои нюансы. К пересылке не принимаются: скоропортящиеся товары без заводской упаковки; продукция животного происхождения без термической обработки; напитки в стеклянной таре, если перевозчик не гарантирует сохранность хрупкого груза.</p>
+        <p>Практика показывает, что таможня лояльнее относится к товарам в оригинальной вакуумной упаковке с указанием состава и срока годности на понятном языке.</p>
+    </div>
+
+    <!-- Раздел: Как избежать конфискации -->
+    <div class="category-divider">
+        <span>✅</span>
+        <h2>Как избежать конфискации посылки на таможне</h2>
+    </div>
+
+    <div class="content-card">
+        <h2>Правильное заполнение документов</h2>
+        <p>Правильное заполнение документов — залог успешной доставки. В таможенной декларации необходимо указывать точное описание каждого предмета. Общие фразы вроде «подарки» или «личные вещи» вызывают подозрение и провоцируют досмотр. Указывайте назначение предмета и материал, из которого он изготовлен. Например, вместо «одежда» лучше написать «мужская рубашка из хлопка». Это ускоряет процесс проверки и снижает вероятность того, что посылку вскроют.</p>
+        <p>Если вы не уверены, разрешен ли товар к ввозу в конкретную страну, стоит проконсультироваться с логистическим провайдером. Специалисты сервиса Trely помогают разобраться в тонкостях оформления документации для трансграничной торговли. Это особенно важно для людей, отправляющих посылки по всему миру. Trely надежный сервис доставки через попутчиков, зарегистрируйте прямо сейчас и оцените удобство доставки посылки.</p>
+    </div>
+
+    <!-- Раздел: Ответственность отправителя -->
+    <div class="category-divider">
+        <span>⚖️</span>
+        <h2>Ответственность отправителя за нарушение правил</h2>
+    </div>
+
+    <div class="content-card">
+        <h2>Штрафы, утилизация и уголовные дела</h2>
+        <p>Ответственность за содержимое груза всегда лежит на отправителе. В случае обнаружения опасных веществ перевозчик вправе утилизировать посылку без компенсации ее стоимости. При попытке пересылки запрещенных законом предметов может быть возбуждено административное или уголовное дело. Если незаконное вложение повредило другие посылки или транспортное средство, отправителя обяжут возместить ущерб. Поэтому перед тем, как запечатать коробку, убедитесь, что в ней нет ничего из списка запрещенных товаров.</p>
+        <p>Логистические компании постоянно обновляют свои регламенты. Рекомендуется проверять правила непосредственно перед отправкой, так как политическая и экономическая ситуация может влиять на таможенные требования разных стран.</p>
+    </div>
+
+    <!-- Блок: Ключевые критерии -->
+    <div style="margin-top: 50px;">
+        <div class="category-divider" style="margin-bottom: 30px;">
+            <span>📌</span>
+            <h2>Памятка: что категорически нельзя класть в посылку</h2>
+        </div>
+
+        <div class="criteria-card card-blue">
+            <div class="card-icon">💣</div>
+            <div class="card-content">
+                <h2>Взрывчатые вещества и пиротехника</h2>
+                <p>Порох, патроны, петарды, фейерверки, любые виды пиротехнических изделий. Эти предметы представляют прямую угрозу безопасности при транспортировке. При обнаружении посылку утилизируют без компенсации.</p>
+            </div>
+        </div>
+
+        <div class="criteria-card card-red">
+            <div class="card-icon">🔫</div>
+            <div class="card-content">
+                <h2>Оружие и средства самообороны</h2>
+                <p>Огнестрельное, газовое, холодное оружие, электрошокеры, газовые баллончики. Даже кухонные ножи могут потребовать подтверждения хозяйственно-бытового назначения. Пересылка таких предметов требует специальных лицензий.</p>
+            </div>
+        </div>
+
+        <div class="criteria-card card-green">
+            <div class="card-icon">💰</div>
+            <div class="card-content">
+                <h2>Деньги и ценные бумаги</h2>
+                <p>Банкноты РФ и иностранная валюта, облигации, чеки, долговые обязательства. Для перевода средств существуют банковские инструменты и почтовые переводы. Пересылка наличных почтой запрещена.</p>
+            </div>
+        </div>
+
+        <div class="criteria-card card-orange">
+            <div class="card-icon">🏺</div>
+            <div class="card-content">
+                <h2>Культурные ценности и антиквариат</h2>
+                <p>Старинные книги, монеты, картины, иконы. Без специального разрешения Министерства культуры вывоз таких предметов запрещён. Даже семейные реликвии могут изъять на границе для экспертизы.</p>
+            </div>
+        </div>
+
+        <div class="criteria-card card-purple">
+            <div class="card-icon">🔋</div>
+            <div class="card-content">
+                <h2>Отдельно лежащие литиевые батареи</h2>
+                <p>Power Bank, отдельные аккумуляторы высокой ёмкости. Встроенные в технику батареи обычно разрешены. Пересылка регулируется правилами IATA — перед отправкой гаджета проверьте актуальные ограничения.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">Запрещённые предметы | Гайд 2026</div>
+            <div class="footer-links">
+                <a href="#">Список запретов</a>
+                <a href="#">Правила таможни</a>
+                <a href="#">Советы</a>
+                <a href="#">Контакты</a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            © 2026 Что нельзя класть в посылку при отправке по России и за границу. Полный гид по запрещённым предметам.
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>
